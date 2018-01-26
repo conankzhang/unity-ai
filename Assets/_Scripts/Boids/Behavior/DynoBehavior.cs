@@ -40,6 +40,6 @@ public class DynoBehavior : MonoBehaviour {
         kso = char_RigidBody.updateSteering(ds, Time.deltaTime);
         //Debug.Log(kso.position);
         transform.position = new Vector3(kso.position.x, transform.position.y, kso.position.z);
-        transform.rotation = Quaternion.Euler(0f, kso.orientation * Mathf.Rad2Deg, 0f);
+        transform.rotation = Quaternion.Euler(0f, kso.orientation * Mathf.Rad2Deg + 120, 0f);
     }
 }

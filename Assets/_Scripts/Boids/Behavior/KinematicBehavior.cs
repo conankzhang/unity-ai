@@ -41,7 +41,7 @@ public class KinematicBehavior : MonoBehaviour {
         kso = char_kinematic.updateSteering(ds, Time.deltaTime);
         
         transform.position = new Vector3(kso.position.x, transform.position.y, kso.position.z);
-        transform.rotation = Quaternion.Euler(0f, kso.orientation * Mathf.Rad2Deg, 0f);
+        transform.rotation = Quaternion.Euler(0f, kso.orientation * Mathf.Rad2Deg + 120, 0f);
     }
 
     private void kinematicSeekBehavior()
