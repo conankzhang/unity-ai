@@ -25,6 +25,7 @@ namespace GraphNamespace
         void OnTriggerEnter(Collider other)
         {
             render.material = on_material;
+            print("oka");
         }
 
         void OnTriggerExit(Collider other)
