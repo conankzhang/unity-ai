@@ -25,19 +25,19 @@ namespace GraphNamespace
         void OnTriggerEnter(Collider other)
         {
             render.material = on_material;
-            print("oka");
         }
 
         void OnTriggerExit(Collider other)
         {
 
-            StartCoroutine(WaitToChange(1f));
+            StartCoroutine(WaitToChange(0.2f));
         }
 
         public void setPlanMaterial()
         {
             render.material = plan_material;
         }
+
 
         public void setOffMaterial()
         {
